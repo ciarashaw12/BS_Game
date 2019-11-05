@@ -1,12 +1,12 @@
-public class Card {
-
-}
+import java.util.Random;
 
 public class Card{
 
-    private static String suit;
-    private static String rank;
-    private static String color;
+    private String[] suit = {"Spade","Ace","Club","Heart"};
+    private String[] rank = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+    private String[] color = {"Red", "Black"};
+
+    public Card card;
 
     Card(String s, String r, String c){
 
@@ -16,8 +16,24 @@ public class Card{
 
     }
 
+    public void RandomCard(String s, String r, String c){
+        
+         card = new Card(s,r,c);
+    }
+
+    public Card getCard(){
+        return card;
+    }
+
     public String getSuit(){
         return suit;
+    }
+    public String getRank(){
+        return rank;
+    }
+
+    public String getColor(){
+        return color;
     }
     
 }
