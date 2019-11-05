@@ -8,7 +8,7 @@ public class Card{
 
     public Card card;
 
-    Card(String s, String r, String c){
+    public Card(String s, String r, String c){
 
         this.suit = s;
         this.rank = r;

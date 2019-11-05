@@ -1,7 +1,9 @@
-public class Deck {
+public class Deck extends Card{
     
-    Deck(){
-
+    Cards[] deck = new Cards[52];
+    
+    public Deck(){
+        super(s, r, c);
     }
 
     public void createDeck(){
